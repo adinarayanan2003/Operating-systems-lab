@@ -1,0 +1,12 @@
+MOV R1,20
+MOV R0, 1
+
+for:
+MOV R16, R0
+PORT P1, R16
+OUT
+INR R0
+DCR R1
+JNZ R1,for
+
+HALT
